@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.home {
+	background-image: url("./assets/bgHome.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.universe {
+	background-image: url("./assets/bgUniverse.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.explore {
+	background-image: url("./assets/bgExplore.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+body,
+button,
+input {
+	font-family: "Roboto", sans-serif;
+}
+
+:root {
+	font-size: clamp(40%, 1%+ 2vw, 62.5%);
+	--txt-nav: rgba(195, 195, 203, 0.77);
+	--txt-nav-focus-button: rgb(255, 255, 255);
+	--txt-h1-p: hsla(240, 9%, 89%, 1);
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* padding: 1.5rem 3rem;
+	gap: 1.5rem; */
+	padding: 4rem 7.2rem;
+	gap: 3.3rem;
+	background-color: transparent;
+}
+
+nav {
+	font-size: 21.667px;
+	font-weight: 400;
+	line-height: 2.1667rem;
+	display: flex;
+	gap: 3.2rem;
+}
+nav a {
+	text-decoration: none;
+}
+nav a:visited {
+	color: var(--txt-nav);
+}
+nav a:hover {
+	color: var(--txt-nav-focus-button);
+}
+nav a:focus {
+	color: var(--txt-nav-focus-button);
+}
+
+.main-home {
+	display: grid;
+	place-content: center;
+	margin-top: 2.5rem;
+}
+.main-home h1 {
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: 125%;
+	color: var(--txt-h1-p);
+}
+.main-home button {
+	/* width: 12rem; */
+	padding: 12px 32px;
+	border-radius: 0.5rem;
+	border: 0.2rem solid #fff;
+	background-color: transparent;
+	color: var(--txt-nav-focus-button);
+	margin: 0 auto;
+	margin-top: 1.4rem;
+
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.main-universe,
+.main-exploration {
+	width: 64.8rem;
+	margin-left: 7.2rem;
+	margin-top: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+.main-universe h1,
+.main-exploration h1 {
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: 125%;
+	color: var(--txt-h1-p);
+}
+.main-universe p,
+.main-exploration p {
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 160%;
+	color: var(--txt-h1-p);
+}
